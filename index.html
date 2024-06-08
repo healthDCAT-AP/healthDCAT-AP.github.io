@@ -2976,7 +2976,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
                                 </td>
                                 <td property="rdfs:comment">
                                     A category of the Dataset.
-									<BR>RDF example: <a href="#healthdcataphealththeme">healthdcatap:healththeme</a>
+									<BR>RDF example: <a href="#healthdcataphealththeme">healthdcatap:healthTheme</a>
                                 </td>
                                 <td property="skos:scopeNote">
                                     A Dataset may be associated with multiple themes. Wikidata URIs MUST be used.
@@ -9278,22 +9278,22 @@ csvw:column [
 a csvw:Column ;
 csvw:name "CD_RN_STATUS" ;
 csvw:datatype xsd:float ;
-csvw:describes "Patient status: Whether patient is deceased, has migrated or is de-registred" ;
+dcterms:description "Patient status: Whether patient is deceased, has migrated or is de-registred"@en ;
 ], [
 a csvw:Column ;
 csvw:name "CD_COD_COVID" ;
 csvw:datatype xsd:string ;
-csvw:describes "COVID-19 specific death Patients deceased from COVID-19" ;
+dcterms:description "COVID-19 specific death Patients deceased from COVID-19"@en ;
 ], [
 a csvw:Column ;
 csvw:name "CD_EDU" ;
 csvw:datatype xsd:string ;
-csvw:describes "Patient educational level using ISCED classification" ;
+dcterms:description "Patient educational level using ISCED classification"@en ;
 ], [
 a csvw:Column ;
 csvw:name "HH_TYPE_LIPRO" ;
 csvw:datatype xsd:string ;
-csvw:describes "Patient household status" ;
+dcterms:description "Patient household status"@en ;
 ] .
 
 &lt;VACCINET+&gt; a csvw:Table ;
@@ -9304,37 +9304,37 @@ csvw:column [
 a csvw:Column ;
 csvw:name "Patient identifier" ;
 csvw:datatype xsd:integer ;
-csvw:describes "NISS of vaccinated person" ;
+dcterms:description "NISS of vaccinated person"@en ;
 ], [
 a csvw:Column ;
 csvw:name "Year of birth" ;
 csvw:datatype xsd:date ;
-csvw:describes "Year of birth, except for children &lt;24 months where month and year required" ;
+dcterms:description "Year of birth, except for children &lt;24 months where month and year required"@en ;
 ], [
 a csvw:Column ;
 csvw:name "Date of death" ;
 csvw:datatype xsd:date ;
-csvw:describes "Patient date of death" ;
+dcterms:description "Patient date of death"@en ;
 ], [
 a csvw:Column ;
 csvw:name "Vaccine dose" ;
 csvw:datatype xsd:integer ;
-csvw:describes "Dose number (1st dose, 2nd dose…)" ;
+dcterms:description "Dose number (1st dose, 2nd dose…)"@en ;
 ], [
 a csvw:Column ;
 csvw:name "Vaccine Identification Code" ;
 csvw:datatype xsd:integer ;
-csvw:describes "CNK/ATK vaccine code : CNK code if known, otherwise ATC code. CNK and ATC codes can also be used as separate fields will be delivered." ;
+dcterms:description "CNK/ATK vaccine code : CNK code if known, otherwise ATC code. CNK and ATC codes can also be used as separate fields will be delivered."@en ;
 ], [
 a csvw:Column ;
 csvw:name "Date of administration" ;
 csvw:datatype xsd:date ;
-csvw:describes "Date of vaccine administration" ;
+dct:description "Date of vaccine administration"@en ;
 ], [
 a csvw:Column ;
 csvw:name "Record date" ;
 csvw:datatype xsd:date ;
-csvw:describes "Date of recording in the registry" ;
+dcterms:description "Date of recording in the registry"@en ;
 ] .
 
 &lt;COBRHA&gt; a csvw:Table ;
@@ -9345,27 +9345,27 @@ csvw:column [
 a csvw:Column ;
 csvw:name "IndividualID" ;
 csvw:datatype xsd:integer ;
-csvw:describes "Unique individual ID" ;
+dcterms:description "Unique individual ID"@en ;
 ], [
 a csvw:Column ;
 csvw:name "HCW_Gender" ;
 csvw:datatype xsd:string ;
-csvw:describes "Gender of the healthcareworker" ;
+dcterms:description "Gender of the healthcareworker"@en ;
 ], [
 a csvw:Column ;
 csvw:name "HCProfessional" ;
 csvw:datatype xsd:string ;
-csvw:describes "Healthcare profession of the individual. Can be more than one and is given by the authentic source ‘FPS_PH’ or NIHII" ;
+dcterms:description "Healthcare profession of the individual. Can be more than one and is given by the authentic source ‘FPS_PH’ or NIHII"@en ;
 ], [
 a csvw:Column ;
 csvw:name "Speciality" ;
 csvw:datatype xsd:string ;
-csvw:describes "Speciality performed by the individual" ;
+dcterms:description "Speciality performed by the individual"@en ;
 ], [
 a csvw:Column ;
 csvw:name "Professional_status" ;
 csvw:datatype xsd:string ;
-csvw:describes "Dinctinction between active and non-active professionnals NIHII Status : active regarding NIHII End date : Active regarding FPS_PH" ;
+dcterms:description "Dinctinction between active and non-active professionnals NIHII Status : active regarding NIHII End date : Active regarding FPS_PH"@en ;
 ] .
 </pre>
 </aside>
@@ -9803,25 +9803,25 @@ healthdcatap:populationCoverage "The population targeted by the LINK-VACC projec
 </pre>
 
 <div class="marker" id="healthdcatapminTypicalAge"></div>
-<p>healthdcatap:minTypicalAge rdfs:nonNegativInteger [1..1]</p>
+<p>healthdcatap:minTypicalAge xsd:nonNegativeInteger [1..1]</p>
 <pre class="js">
 healthdcatap:minTypicalAge: "18";
 </pre>
 
 <div class="marker" id="healthdcatapmaxTypicalAge"></div>
-<p>healthdcatap:maxTypicalAge rdfs:nonNegativInteger [1..1]</p>
+<p>healthdcatap:maxTypicalAge xsd:nonNegativeInteger [1..1]</p>
 <pre class="js">
 healthdcatap:maxTypicalAge: "64";
 </pre>
 
 <div class="marker" id="healthdcatapnumberofrecords"></div>
-<p>healthdcatap:numberOfrecords rdfs:nonNegativInteger [1..1]</p>
+<p>healthdcatap:numberOfrecords xsd:nonNegativeInteger [1..1]</p>
 <pre class="js">
 healthdcatap:numberOfrecords: "124866488";
 </pre>
 
 <div class="marker" id="healthdcatapnumberofuniqueindividuals"></div>
-<p>healthdcatap:numberOfUniqueIndividuals rdfs:nonNegativInteger [1..1]</p>
+<p>healthdcatap:numberOfUniqueIndividuals xsd:nonNegativeInteger [1..1]</p>
 <pre class="js">
 healthdcatap:numberOfUniqueIndividuals: "8914722";
 </pre>
