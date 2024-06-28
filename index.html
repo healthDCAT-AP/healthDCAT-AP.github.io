@@ -2502,12 +2502,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
 								</td>								
                             </tr>
 
-							<!--
-                            <tr id="Dataset.analytics"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/adms#sample"
-                                class="class mandatory">
-								-->
+
                             <tr id="Dataset.hascodevalues"
                                 typeof="rdfs:Property"
                                 class="class mandatory">
@@ -2542,12 +2537,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
                             </tr>
 
 
-							<!--
-                            <tr id="Dataset.analytics"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/adms#sample"
-                                class="class mandatory">
-								-->
+
                             <tr id="Dataset.hascodingsystem"
                                 typeof="rdfs:Property"
                                 class="class mandatory">
@@ -2630,7 +2620,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
                                             <a href="#Kind" data-placement="right">Kind</a>
                                 </td>
                                 <td>
-                                    0..*
+                                    1..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Contact information that can be used for sending comments about the Dataset.
@@ -2900,7 +2890,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
                                             <a href="#Concept" data-placement="right">Concept</a>
                                 </td>
                                 <td>
-                                    1..*
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     The health category to which this dataset belongs as described in the Commission Regulation on the European Health Data Space laying down a list of categories of electronic data for secondary use, Art.33.
@@ -2972,7 +2962,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
                                             <a href="#Concept" data-placement="right">Concept</a>
                                 </td>
                                 <td>
-                                    0..*
+                                    1..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A category of the Dataset or tag describing the Dataset.
@@ -3090,39 +3080,7 @@ class="class mandatory">
 								</td>								
                             </tr>
 
-<!--                       
-                            <tr id="Dataset.isversionof"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/dcat#isVersionOf"
-                                class="class mandatory">
-                                <td>
-                                        <a href="http://www.w3.org/ns/dcat#isVersionOf"
-                                           data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/dcat#isVersionOf"
-                                           data-placement="right">
-                                        is version of</a>
-                                </td>
-                                <td>
-                                            <a href="#Dataset" data-placement="right">Dataset</a>
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A related Dataset of which the described Dataset is a version, edition, or adaptation.
-									<BR>RDF example: <a href="#dcatisversionof">dcat:isVersionOf</a>
-                                </td>
-                                <td property="skos:scopeNote">
-                                    dct:isVersionOf is replaced by dcat:isVersionOf in DCAT-AP 3.      
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-								A
-								</td>								
-                            </tr>
- -->                       
+                     
                             <tr id="Dataset.keyword"
                                 typeof="rdfs:Property"
                                 resource="http://www.w3.org/ns/dcat#keyword"
@@ -3139,7 +3097,7 @@ class="class mandatory">
                                             <a href="#Literal" data-placement="right">Literal</a>
                                 </td>
                                 <td>
-                                    0..*
+                                    1..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A keyword or tag describing the Dataset.
@@ -3242,7 +3200,7 @@ class="class mandatory">
                                             <a href="#LegalBasis" data-placement="right">Legal Basis</a>
                                 </td>
                                 <td>
-                                    1..*
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     The legal basis used to justify processing of personal data
@@ -3319,7 +3277,7 @@ class="class mandatory">
 										<a href="#xsd%3AnonNegativeInteger" data-placement="right">xsd:non NegativeInteger</a>
                                 </td>
                                 <td>
-                                    1..1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     Maximum typical age of the population within the dataset
@@ -3337,12 +3295,7 @@ class="class mandatory">
                             </tr>
 
 
-							<!--
-                            <tr id="Dataset.hdab"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/adms#sample"
-                                class="class mandatory">
-								-->
+
                             <tr id="Dataset.numberofrecords"
                                 typeof="rdfs:Property"
                                 class="class mandatory">
@@ -3358,7 +3311,7 @@ class="class mandatory">
 										<a href="#xsd%3AnonNegativeInteger" data-placement="right">xsd:non NegativeInteger</a>
                                 </td>
                                 <td>
-                                    1..1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     Size of the dataset in terms of the number of records.
@@ -3375,12 +3328,7 @@ class="class mandatory">
 								</td>								
                             </tr>					
 
-							<!--
-                            <tr id="Dataset.hdab"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/adms#sample"
-                                class="class mandatory">
-								-->
+
                             <tr id="Dataset.numberofuniqueindividuals"
                                 typeof="rdfs:Property"
                                 class="class mandatory">
@@ -3396,7 +3344,7 @@ class="class mandatory">
 										<a href="#xsd%3AnonNegativeInteger" data-placement="right">xsd:non NegativeInteger</a>
                                 </td>
                                 <td>
-                                    1..1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     Number of records for unique individuals.
@@ -3479,12 +3427,7 @@ class="class mandatory">
                             </tr>
 
 
-							<!--
-                            <tr id="Dataset.hdab"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/adms#sample"
-                                class="class mandatory">
-								-->
+
                             <tr id="Dataset.haspersonaldata"
                                 typeof="rdfs:Property"
                                 class="class mandatory">
@@ -3521,18 +3464,13 @@ class="class mandatory">
                                 class="class mandatory">
 
                                 <td>
-                                        <!--<a href="http://purl.org/dc/terms/provenance"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/provenance"
-                                           data-placement="right">
-                                        provenance</a>-->
 										population coverage
                                 </td>
                                 <td>
                                             <a href="#Literal" data-placement="right">Literal</a>
                                 </td>
                                 <td>
-                                    1..*
+                                   0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A definition of the population within the dataset
@@ -3631,7 +3569,7 @@ class="class mandatory">
                                             <a href="#Literal" data-placement="right">Literal</a>
                                 </td>
                                 <td>
-                                    0..*
+                                    1..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A description of the publisher activities
@@ -3654,18 +3592,14 @@ class="class mandatory">
                                 class="class mandatory">
 
                                 <td>
-                                        <!--<a href="http://purl.org/dc/terms/provenance"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/provenance"
-                                           data-placement="right">
-                                        provenance</a>-->
+
 										publisher type
                                 </td>
                                 <td>
                                             <a href="#concept" data-placement="right">Concept</a>
                                 </td>
                                 <td>
-                                    0..*
+                                    1..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A type of organisation that makes the Dataset available.
@@ -3797,7 +3731,7 @@ class="class mandatory">
                                             <a href="#qualitycertificate" data-placement="right">quality certificate</a>
                                 </td>
                                 <td>
-                                    1..*
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A statement related to quality of the Dataset, including rating, quality certificate, feedback
@@ -3882,21 +3816,12 @@ class="class mandatory">
 								</td>								
                             </tr>
 
-<!--
-                            <tr id="Dataset.retentionperiod"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/temporal"
-                                class="class mandatory">
-								-->
+
                             <tr id="Dataset.retentionperiod"
                                 typeof="rdfs:Property"
                                 class="class mandatory">
                                 <td>
-                                        <!--<a href="http://purl.org/dc/terms/temporal"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/temporal"
-                                           data-placement="right">
-                                        temporal coverage</a>-->
+
 										retention period
                                 </td>
                                 <td>
@@ -3936,7 +3861,7 @@ class="class mandatory">
                                             <a href="#Distribution" data-placement="right">Distribution</a>
                                 </td>
                                 <td>
-                                    1..*
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A sample distribution of the dataset.
