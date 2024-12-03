@@ -2570,7 +2570,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
 									<BR>RDF example: <a href="#healthdcataphasCodingSystem">healthdcatap:hasCodingSystem</a>
                                 </td>
                                 <td property="skos:scopeNote">
-                                Wikidata URIs MUST be used.
+                                Wikidata concept URIs MUST be used.
                                 </td>
                                 <td>
 
@@ -2604,7 +2604,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
 								<BR>RDF example: <a href="#dctconformsTo">dct:conformsTo</a>
                                 </td>
                                 <td property="skos:scopeNote">
-                                Wikidata URIs MUST be used.						
+                                Wikidata concept URIs MUST be used.						
                                 </td>
                                 <td>
                                     <a href="https://w3c.github.io/dxwg/dcat/#Property:resource_conforms_to">Link</a>
@@ -2979,7 +2979,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
 									<BR>RDF example: <a href="#healthdcataphealththeme">healthdcatap:healthTheme</a>
                                 </td>
                                 <td property="skos:scopeNote">
-                                    A Dataset may be associated with multiple themes. Wikidata URIs MUST be used.
+                                    A Dataset may be associated with multiple themes. Wikidata concept URIs MUST be used.
                                 </td>
                                 <td>
    
@@ -8873,7 +8873,7 @@ According to the generic DCAT-AP guidelines for publishing controlled vocabulari
 <h3>Wikidata as an ontological medical database</h3>
 In addition to the proposed common controlled vocabularies, which are mandatory to ensure minimal interoperability, healthDCAT-AP relies on [<cite><a class="bibref" data-link-type="biblio" href="#bib-wikidata" title="Wikidata: A large-scale collaborative ontological medical database">Wikidata</a></cite>] as large-scale, human-readable, machine-readable, multilingual, multidisciplinary, centralised, editable, structured, and linked knowledge-base.
 
-Wikidata URIs MUST be used for the following properties <a href="#Dataset.hascodingsystem">coding system</a>, <a href="#Dataset.hascodevalues">code values</a>, <a href="#Dataset.conformsto">conform to</a>, <a href="#Dataset.healththeme">health theme</a>. </section>
+Wikidata concept URIs MUST be used for the following properties <a href="#Dataset.hascodingsystem">coding system</a>, <a href="#Dataset.hascodevalues">code values</a>, <a href="#Dataset.conformsto">conform to</a>, <a href="#Dataset.healththeme">health theme</a>. </section>
 
 
 
@@ -9482,7 +9482,7 @@ healthdcatap:healthCategory &lt;http://healthdata.ec.europa.eu/.../(o)&gt;;
 <div class="marker" id="healthdcataphealththeme"></div>
 <p>healthdcatap:healthTheme (dct:subject): skos:Concept [0..*]</p>
 <pre class="js">
-healthdcatap:healthTheme &lt;https://www.wikidata.org/wiki/Q58624061&gt;,&lt;https://www.wikidata.org/wiki/Q7907952&gt; ;
+healthdcatap:healthTheme &lt;https://www.wikidata.org/entity/Q58624061&gt;,&lt;https://www.wikidata.org/entity/Q7907952&gt; ;
 </pre>
 
 <div class="marker" id="healthdcataphasCodeValues"></div>
@@ -9490,7 +9490,7 @@ healthdcatap:healthTheme &lt;https://www.wikidata.org/wiki/Q58624061&gt;,&lt;htt
 <pre class="js">
 healthdcatap:hasCodeValues [ a skos:Concept;
 skos:inScheme [ a skos:ConceptScheme;
-dct:identifier "https://www.wikidata.org/wiki/Property:P494"^^&lt;http://www.w3.org/2001/XMLSchema#anyURI&gt;;
+dct:identifier "https://www.wikidata.org/entity/P494"^^&lt;http://www.w3.org/2001/XMLSchema#anyURI&gt;;
 skos:prefLabel "International Classification of Diseases, 10th Revision (ICD-10)"@en;
 skos:definition "ICD-10 is a medical classification list by the World Health Organization."@en;
 skos:notation "ICD-10";
@@ -9503,7 +9503,7 @@ skos:prefLabel "Viral vaccines"@en
 
 healthdcatap:hasCodeValues [ a skos:Concept;
 skos:inScheme [ a skos:ConceptScheme;
-dct:identifier "https://www.wikidata.org/wiki/Property:P494"^^&lt;http://www.w3.org/2001/XMLSchema#anyURI&gt;;
+dct:identifier "https://www.wikidata.org/entity/P494"^^&lt;http://www.w3.org/2001/XMLSchema#anyURI&gt;;
 skos:prefLabel "International Classification of Diseases, 10th Revision (ICD-10)"@en;
 skos:definition "ICD-10 is a medical classification list by the World Health Organization."@en;
 skos:notation "ICD-10";
@@ -9524,13 +9524,13 @@ dct:accessRights &lt;http://publications.europa.eu/resource/authority/access-rig
 <div class="marker" id="dctconformsTo"></div>
 <p>dct:conformsTo dct:Standard [0..*]</p>
 <pre class="js">
-dct:conformsTo &lt;https://www.wikidata.org/wiki/Q19597236&gt;;
+dct:conformsTo &lt;https://www.wikidata.org/entity/Q19597236&gt;;
 </pre>
 
 <div class="marker" id="healthdcataphasCodingSystem"></div>
 <p>healthdcatap:hasCodingSystem dct:Standard [0..*]</p>
 <pre class="js">
-healthdcatap:hasCodingSystem &lt;https://www.wikidata.org/wiki/Property:P1690&gt;,&lt;https://www.wikidata.org/wiki/Property:P4229&gt;;
+healthdcatap:hasCodingSystem &lt;https://www.wikidata.org/entity/P1690&gt;,&lt;https://www.wikidata.org/entity/P4229&gt;;
 </pre>
 
 <div class="marker" id="dctcreator"></div>
