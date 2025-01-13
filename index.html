@@ -451,7 +451,7 @@ For readability purposes, the representation has been condensed as follows:
 			      <a href="#Distribution">Distribution</a> |
 			      <a href="#Location">Location</a> |
 			      <a href="#Relationship">Relationship</a> |
-				  <a href="#Rightsstatement">Rights statement</a> |
+			      <a href="#Rightsstatement">Rights statement</a> |
                         </p>
                         <p>
                             The main entities are supported by:
@@ -582,11 +582,22 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Agent.name">name</a>
+                            For this entity the following properties are defined: 
+				<a href="#Agent.name">name</a>
                             , <a href="#Agent.type">type</a>
+			    , <a href="#Agent.publishernote">publisher note</a>
+                            , <a href="#Agent.publishertype">publisher type</a>
+			    , <a href="#Agent.trusteddataholder">trusted data holder</a>
                             .
                     </dd>
-                
+		    <br>
+                        <dd>
+The properties listed below are unique to the HealthDCAT-AP profile (denoted as 'P') and were not earlier defined by any requirements in DCAT-AP:
+			    <a href="#Agent.publishernote">publisher note</a>
+                            , <a href="#Agent.publishertype">publisher type</a>
+			    , <a href="#Agent.trusteddataholder">trusted data holder</a>
+                            .
+                    </dd> 
             </dl>
         </div>
         
@@ -766,7 +777,62 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
 									A
                                 </td>
                             </tr>
-                        
+
+ <tr id="Agent.publishernote"
+                                typeof="rdfs:Property"
+                                class="class mandatory">
+                                <td>
+								publisher note
+                                </td>
+                                <td>  
+                                <a href="#Literal" data-placement="right">Literal</a>
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A description of the publisher activities
+									<BR>RDF example: <a href="#healthdcatappublishernote">healthdcatap:publishernote</a>
+                                </td>
+                                <td property="skos:scopeNote">
+                                   This property can be repeated for parallel language versions of the publisher notes.    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+									P
+                                </td>
+                            </tr>
+							
+
+ <tr id="Agent.publishertype"
+                                typeof="rdfs:Property"
+                                class="class mandatory">
+                                <td>
+								publisher type
+                                </td>
+                                <td>  
+                                <a href="#concept" data-placement="right">Concept</a>
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A type of organisation that makes the Dataset available.
+									<BR>RDF example: <a href="#healthdcatappublishertype">healthdcatap:publishertype</a>
+                                </td>
+                                <td property="skos:scopeNote">
+									A controlled vocabulary is provided, denoting commonly recognised health publishers.
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+									P
+                                </td>
+                            </tr>
+			    
                     </tbody>
                 </table>
             </div>
@@ -2247,11 +2313,11 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                     
                         <dd>
                             For this entity the following properties are defined: 
-							<a href="#Dataset.accessrights">access rights</a>
-							, <a href="#Dataset.alternative">alternative</a>
+			    <a href="#Dataset.accessrights">access rights</a>
+			    , <a href="#Dataset.alternative">alternative</a>
                             , <a href="#Dataset.analytics">analytics</a>
                             , <a href="#Dataset.applicablelegislation">applicable legislation</a>
-	                        , <a href="#Dataset.hascodevalues">code values</a>
+	                    , <a href="#Dataset.hascodevalues">code values</a>
                             , <a href="#Dataset.hascodingsystem">coding system</a>
                             , <a href="#Dataset.conformsto">conforms to</a>
                             , <a href="#Dataset.contactpoint">contact point</a>
@@ -2263,10 +2329,10 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                             , <a href="#Dataset.geographicalcoverage">geographical coverage</a>
                             , <a href="#Dataset.hasversion">has version</a>
                             , <a href="#Dataset.healthcategory">health category</a>							
-							, <a href="#Dataset.hdab">health data access body</a>
+			    , <a href="#Dataset.hdab">health data access body</a>
                             , <a href="#Dataset.healththeme">health theme</a>
                             , <a href="#Dataset.identifier">identifier</a>
-							                            , <a href="#Dataset.inseries">in series</a>
+			    , <a href="#Dataset.inseries">in series</a>
                             , <a href="#Dataset.isreferencedby">is referenced by</a>
                             <!--, <a href="#Dataset.isversionof">is version of</a>-->
                             , <a href="#Dataset.keyword">keyword</a>
@@ -2283,8 +2349,6 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                             , <a href="#Dataset.populationcoverage">population coverage</a>							
                             , <a href="#Dataset.provenance">provenance</a>
                             , <a href="#Dataset.publisher">publisher</a>
-                            , <a href="#Dataset.publishernote">publisher note</a>
-                            , <a href="#Dataset.publishertype">publisher type</a>
                             , <a href="#Dataset.haspurpose">purpose</a>
                             , <a href="#Dataset.qualifiedattribution">qualified attribution</a>
                             , <a href="#Dataset.qualifiedrelation">qualified relation</a>
@@ -2328,7 +2392,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
                             , <a href="#Dataset.hascodevalues">code values</a>
                             , <a href="#Dataset.hascodingsystem">coding system</a>
                             , <a href="#Dataset.healthcategory">health category</a>							
-							, <a href="#Dataset.hdab">health data access body</a>
+			    , <a href="#Dataset.hdab">health data access body</a>
                             , <a href="#Dataset.healththeme">health theme</a>
                             , <a href="#Dataset.haslegalbasis">legal basis</a>
                             , <a href="#Dataset.maxtypicalage">max typical age</a>
@@ -2337,8 +2401,6 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
                             , <a href="#Dataset.numberofuniqueindividuals">number of unique individuals</a>
                             , <a href="#Dataset.haspersonaldata">personal data</a>							
                             , <a href="#Dataset.populationcoverage">population coverage</a>
-                            , <a href="#Dataset.publishernote">publisher note</a>
-                            , <a href="#Dataset.publishertype">publisher type</a>
                             , <a href="#Dataset.haspurpose">purpose</a>
                             , <a href="#Dataset.hasqualityannotation">quality annotation</a>
                             , <a href="#Dataset.retentionperiod">retention period</a>
@@ -3565,69 +3627,7 @@ class="class mandatory">
 								</td>								
                             </tr>
 
-                            <tr id="Dataset.publishernote"
-                                typeof="rdfs:Property"
-                                class="class mandatory">
-
-                                <td>
-                                        <!--<a href="http://purl.org/dc/terms/provenance"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/provenance"
-                                           data-placement="right">
-                                        provenance</a>-->
-										publisher note
-                                </td>
-                                <td>
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                </td>
-                                <td>
-                                    1..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A description of the publisher activities
-									<BR>RDF example: <a href="#healthdcatappublishernote">healthdcatap:publishernote</a>
-                                </td>
-                                <td property="skos:scopeNote">
-   This property can be repeated for parallel language versions of the publisher notes.
-                                </td>
-                                <td>
-                                  
-                                </td>
-                                <td>
-								P
-								</td>								
-                            </tr>
-
-
-                            <tr id="Dataset.publishertype"
-                                typeof="rdfs:Property"
-                                class="class mandatory">
-
-                                <td>
-
-										publisher type
-                                </td>
-                                <td>
-                                            <a href="#concept" data-placement="right">Concept</a>
-                                </td>
-                                <td>
-                                    1..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A type of organisation that makes the Dataset available.
-									<BR>RDF example: <a href="#healthdcatappublishertype">healthdcatap:publishertype</a>
-                                </td>
-                                <td property="skos:scopeNote">
-									A controlled vocabulary is provided, denoting commonly recognised health publishers.
-                                </td>
-                                <td>
-                                  
-                                </td>
-                                <td>
-								P
-								</td>								
-                            </tr>
-
+                            
                             <tr id="Dataset.haspurpose"
                                 typeof="rdfs:Property"
                                 resource="https://w3c.github.io/dpv/dpv/#hasPurpose"
@@ -6971,7 +6971,7 @@ The title may indicate the dimension values.
                     
                         <dd>
                             For this entity the following properties are defined: <a href="#DatasetSeries.applicablelegislation">applicable legislation</a>
-							, <a href="#DatasetSeries.contactpoint">contact point</a>
+			    , <a href="#DatasetSeries.contactpoint">contact point</a>
                             , <a href="#DatasetSeries.description">description</a>
                             <!--, <a href="#DatasetSeries.first">first</a>-->
                             , <a href="#DatasetSeries.frequency">frequency</a>
