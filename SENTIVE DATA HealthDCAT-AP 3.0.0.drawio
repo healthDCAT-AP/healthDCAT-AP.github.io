@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5">
   <diagram name="Page-1" id="j0lLHCOknAyVKFKyBZGa">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -498,6 +498,9 @@
           <mxGeometry x="0.0352" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="2Pr1EKgPgPJJ3hncCs-6-1" value="&lt;b style=&quot;font-family: sans-serif; font-size: 20px; text-align: start;&quot;&gt;SENSITIVE DATA HealthDCAT-AP&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;text-wrap-mode: nowrap; font-size: 20px;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: sans-serif; text-align: start; text-wrap-mode: wrap; background-color: rgb(255, 255, 255);&quot;&gt;Copyright © 2024&amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;font-size: 20px; text-wrap-mode: nowrap; background-color: initial;&quot;&gt;https://healthdcat-ap.github.io/&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="-450" width="740" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
