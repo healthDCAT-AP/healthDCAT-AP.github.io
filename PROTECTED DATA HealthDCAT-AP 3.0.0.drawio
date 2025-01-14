@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5">
   <diagram name="Page-1" id="j0lLHCOknAyVKFKyBZGa">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -292,17 +292,6 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="J__374BZSMIU1kpbdkvT-67" value="&lt;font color=&quot;#00cc00&quot; style=&quot;font-size: 12px;&quot;&gt;healthdcatap:healthTheme&lt;br&gt;&quot;recommended&quot;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="J__374BZSMIU1kpbdkvT-66">
-          <mxGeometry x="0.0352" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="J__374BZSMIU1kpbdkvT-68" value="" style="endArrow=open;html=1;rounded=0;endFill=0;exitX=1;exitY=0.231;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1341" y="851" as="sourcePoint" />
-            <mxPoint x="1612" y="851" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="J__374BZSMIU1kpbdkvT-69" value="&lt;font color=&quot;#00cc00&quot; style=&quot;font-size: 12px;&quot;&gt;healthdcatap:publisherType&lt;br&gt;&quot;recommended&quot;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="J__374BZSMIU1kpbdkvT-68">
           <mxGeometry x="0.0352" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
