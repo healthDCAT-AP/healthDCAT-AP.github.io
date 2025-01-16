@@ -4351,13 +4351,13 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
 
 
 <TABLE class="data-table simple" style="border: 1px solid black; padding: 8px;">
-<TR><TH COLSPAN=3 style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">HealthDCAT-AP Cardinalities Based on Dataset Access Rights: Open, Protected, and Sensitive Health Data</TH></TR>
+<TR><TH COLSPAN=3 style="border: 0px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">HealthDCAT-AP Cardinalities Based on Dataset Access Rights: Open, Protected, and Sensitive Health Data</TH></TR>
 
-<TR><TD>PUBLIC</TD><TD>RESTRICTED</TD><TD>NON_PUBLIC</TD></TR>
+<TR><TD style="border: 1px solid black; padding: 8px; text-align: left;">PUBLIC</TD><TD style="border: 1px solid black; padding: 8px; text-align: left;">RESTRICTED</TD><TD style="border: 1px solid black; padding: 8px; text-align: left;">NON_PUBLIC</TD></TR>
 
-<TR><TH COLSPAN=3 style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Mandatory properties</TH></TR>
+<TR><TH COLSPAN=3 style="border: 0px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Mandatory properties</TH></TR>
 <TR>
-<TD>
+<TD style="border: 1px solid black; padding: 8px; text-align: left;">
 dct:description: rdfs:Literal [1..*]<BR>
 dct:title: rdfs:Literal [1..*]<BR>
 dct:identifier: rdfs:Literal: xsd:anyURI [1..*]<BR>
@@ -4368,7 +4368,7 @@ dcat:distribution: dcat:Distribution [1..*]<BR>
 healthdcatap:hdab foaf:Agent [1..1]<BR>
 heathdcatap:healthCategory: (dct:subject) skos:Concept [1..*]
 </TD>
-<TD>
+<TD style="border: 1px solid black; padding: 8px; text-align: left;">
 dct:description: rdfs:Literal [1..*]<BR>
 dct:title: rdfs:Literal [1..*]<BR>
 dct:identifier: rdfs:Literal: xsd:anyURI [1..*]<BR>
@@ -4380,7 +4380,7 @@ dcat:distribution: dcat:Distribution [1..*]<BR>
 healthdcatap:hdab foaf:Agent [1..1]<BR>
 heathdcatap:healthCategory: (dct:subject) skos:Concept [1..*]
 </TD>
-<TD>
+<TD style="border: 1px solid black; padding: 8px; text-align: left;">
 adms:sample: dcat:Distribution [1..*]<BR>
 dcat:contactPoint: vcard:Kind [1..*]<BR>
 dcat:distribution: dcat:Distribution [1..*]<BR>
@@ -4402,17 +4402,17 @@ healthdcatap:healthTheme: (dct:subject) skos:Concept [1..*]<BR>
 </TD>
 </TR>
 
-<TR><TH COLSPAN=3style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Recommended properties</TH></TR>
+<TR><TH COLSPAN=3 style="border: 0px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Recommended properties</TH></TR>
 <TR>
-<TD>
+<TD style="border: 1px solid black; padding: 8px; text-align: left;">
 dcat:contactPoint: vcard:Kind [0..*]<BR>
 dcat:keyword: rdfs:Literal [0..*]
 </TD>
-<TD>
+<TD style="border: 1px solid black; padding: 8px; text-align: left;">
 dcat:contactPoint: vcard:Kind [0..*]<BR>
 dcat:keyword: rdfs:Literal [0..*]
 </TD>
-<TD>
+<TD style="border: 1px solid black; padding: 8px; text-align: left;">
 dcat:landingPage: foaf:Document [0..*]<BR>
 dcat:temporalResolution rdfs:Literal: xsd:duration [0..1]<BR>
 dct:accrualPeriodicity: dct:Frequency [0..1]<BR>
@@ -4437,9 +4437,9 @@ healthdcatap:populationCoverage rdfs:Literal [0..*]
 </TD>
 </TR>
 
-<TR><TH COLSPAN=3style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Optional properties</TH></TR>
+<TR><TH COLSPAN=3 style="border: 0px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Optional properties</TH></TR>
 <TR>
-<TD>
+<TD style="border: 1px solid black; padding: 8px; text-align: left;">
 adms:identifier: adms:Identifier [0..*]<BR>
 adms:sample: dcat:Distribution [0..*]<BR>
 adms:versionNotes: rdfs:Literal [0..*]<BR>
@@ -4483,7 +4483,7 @@ owl:versionInfo: rdfs:Literal [0..1]<BR>
 prov:qualifiedAttribution prov:attribution [0..*]<BR>
 prov:wasGeneratedBy: prov:Activity [0..*]<BR>
 </TD>
-<TD>
+<TD style="border: 1px solid black; padding: 8px; text-align: left;">
 adms:identifier: adms:Identifier [0..*]<BR>
 adms:sample: dcat:Distribution [0..*]<BR>
 adms:versionNotes: rdfs:Literal [0..*]<BR>
@@ -4527,7 +4527,7 @@ owl:versionInfo: rdfs:Literal [0..1]<BR>
 prov:qualifiedAttribution prov:attribution [0..*]<BR>
 prov:wasGeneratedBy: prov:Activity [0..*]
 </TD>
-<TD>
+<TD style="border: 0px solid black; padding: 8px; text-align: left;">
 adms:identifier: adms:Identifier [0..*]<BR>
 adms:versionNotes: rdfs:Literal [0..*]<BR>
 dcat:qualifiedRelation: dcat:Relationship [0..*]<BR>
