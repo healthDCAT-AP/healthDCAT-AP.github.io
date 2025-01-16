@@ -2438,14 +2438,14 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
             <div class="u-table-overflow">
 
    <div class="selector-container">
-        <label for="card-selector">Select Access Level: </label>
+        <label for="card-selector">Select Access Level for Open, Protected or Sensivite data: </label>
         <select id="card-selector">
             <option value="public">Public</option>
             <option value="protected">Protected</option>
             <option value="non-public">Non-Public</option>
         </select>
     </div>
-		    
+<br><br>		    
                 <table class="data-table simple" id="table-mandatory-classes" Border=0>
                     <thead>
                         <tr class="data-table__header">
@@ -4357,7 +4357,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
 
 <TR><TH COLSPAN=3 style="border: 0px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Mandatory properties</TH></TR>
 <TR>
-<TD style="border: 1px solid black; padding: 8px; text-align: left;">
+<TD style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">
 dct:description: rdfs:Literal [1..*]<BR>
 dct:title: rdfs:Literal [1..*]<BR>
 dct:identifier: rdfs:Literal: xsd:anyURI [1..*]<BR>
@@ -4368,7 +4368,7 @@ dcat:distribution: dcat:Distribution [1..*]<BR>
 healthdcatap:hdab foaf:Agent [1..1]<BR>
 heathdcatap:healthCategory: (dct:subject) skos:Concept [1..*]
 </TD>
-<TD style="border: 1px solid black; padding: 8px; text-align: left;">
+<TD style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">
 dct:description: rdfs:Literal [1..*]<BR>
 dct:title: rdfs:Literal [1..*]<BR>
 dct:identifier: rdfs:Literal: xsd:anyURI [1..*]<BR>
@@ -4380,7 +4380,7 @@ dcat:distribution: dcat:Distribution [1..*]<BR>
 healthdcatap:hdab foaf:Agent [1..1]<BR>
 heathdcatap:healthCategory: (dct:subject) skos:Concept [1..*]
 </TD>
-<TD style="border: 1px solid black; padding: 8px; text-align: left;">
+<TD style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">
 adms:sample: dcat:Distribution [1..*]<BR>
 dcat:contactPoint: vcard:Kind [1..*]<BR>
 dcat:distribution: dcat:Distribution [1..*]<BR>
@@ -4404,15 +4404,15 @@ healthdcatap:healthTheme: (dct:subject) skos:Concept [1..*]<BR>
 
 <TR><TH COLSPAN=3 style="border: 0px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Recommended properties</TH></TR>
 <TR>
-<TD style="border: 1px solid black; padding: 8px; text-align: left;">
+<TD style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">
 dcat:contactPoint: vcard:Kind [0..*]<BR>
 dcat:keyword: rdfs:Literal [0..*]
 </TD>
-<TD style="border: 1px solid black; padding: 8px; text-align: left;">
+<TD style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">
 dcat:contactPoint: vcard:Kind [0..*]<BR>
 dcat:keyword: rdfs:Literal [0..*]
 </TD>
-<TD style="border: 1px solid black; padding: 8px; text-align: left;">
+<TD style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">
 dcat:landingPage: foaf:Document [0..*]<BR>
 dcat:temporalResolution rdfs:Literal: xsd:duration [0..1]<BR>
 dct:accrualPeriodicity: dct:Frequency [0..1]<BR>
@@ -4439,7 +4439,7 @@ healthdcatap:populationCoverage rdfs:Literal [0..*]
 
 <TR><TH COLSPAN=3 style="border: 0px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Optional properties</TH></TR>
 <TR>
-<TD style="border: 1px solid black; padding: 8px; text-align: left;">
+<TD style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">
 adms:identifier: adms:Identifier [0..*]<BR>
 adms:sample: dcat:Distribution [0..*]<BR>
 adms:versionNotes: rdfs:Literal [0..*]<BR>
@@ -4483,7 +4483,7 @@ owl:versionInfo: rdfs:Literal [0..1]<BR>
 prov:qualifiedAttribution prov:attribution [0..*]<BR>
 prov:wasGeneratedBy: prov:Activity [0..*]<BR>
 </TD>
-<TD style="border: 1px solid black; padding: 8px; text-align: left;">
+<TD style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">
 adms:identifier: adms:Identifier [0..*]<BR>
 adms:sample: dcat:Distribution [0..*]<BR>
 adms:versionNotes: rdfs:Literal [0..*]<BR>
@@ -4527,7 +4527,7 @@ owl:versionInfo: rdfs:Literal [0..1]<BR>
 prov:qualifiedAttribution prov:attribution [0..*]<BR>
 prov:wasGeneratedBy: prov:Activity [0..*]
 </TD>
-<TD style="border: 0px solid black; padding: 8px; text-align: left;">
+<TD style="border: 0px solid black; padding: 8px; text-align: left; vertical-align: top;">
 adms:identifier: adms:Identifier [0..*]<BR>
 adms:versionNotes: rdfs:Literal [0..*]<BR>
 dcat:qualifiedRelation: dcat:Relationship [0..*]<BR>
