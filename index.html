@@ -4361,7 +4361,7 @@ The properties listed below are unique to the HealthDCAT-AP profile (denoted as 
 dct:description: rdfs:Literal [1..*]<BR>
 dct:title: rdfs:Literal [1..*]<BR>
 dct:identifier: rdfs:Literal: xsd:anyURI [1..*]<BR>
-dcatap:applicableLegislation rdfs:Resource [1..*]<BR>
+dcatap:applicableLegislation eli:LegalResource [1..*]<BR>
 dcat:theme (dct:subject): skos:Concept [1..*]<BR>
 dct:accessRights: dct:RightsStatement [1..1]<BR>
 dcat:distribution: dcat:Distribution [1..*]<BR>
@@ -4372,7 +4372,7 @@ heathdcatap:healthCategory: (dct:subject) skos:Concept [1..*]
 dct:description: rdfs:Literal [1..*]<BR>
 dct:title: rdfs:Literal [1..*]<BR>
 dct:identifier: rdfs:Literal: xsd:anyURI [1..*]<BR>
-dcatap:applicableLegislation rdfs:Resource [1..*]<BR>
+dcatap:applicableLegislation eli:LegalResource [1..*]<BR>
 dcat:theme (dct:subject): skos:Concept [1..*]<BR>
 dct:accessRights: dct:RightsStatement [1..1]<BR>
 dct:publisher: foaf:Agent [1..1]<BR>
@@ -4386,7 +4386,7 @@ dcat:contactPoint: vcard:Kind [1..*]<BR>
 dcat:distribution: dcat:Distribution [1..*]<BR>
 dcat:keyword: rdfs:Literal [1..*]<BR>
 dcat:theme (dct:subject): skos:Concept [1..*]<BR>
-dcatap:applicableLegislation rdfs:Resource [1..*]<BR>
+dcatap:applicableLegislation eli:LegalResource [1..*]<BR>
 dct:accessRights: dct:RightsStatement [1..1]<BR>
 dct:description: rdfs:Literal [1..*]<BR>
 dct:identifier: rdfs:Literal: xsd:anyURI [1..*]<BR>
@@ -9772,7 +9772,7 @@ foaf:name "Belgian Health Data Agency"];
 
 
 <div class="marker" id="dcatapapplicableLegislation"></div>
-<p>dcatap:applicableLegislation: rdfs:Resource</p>
+<p>dcatap:applicableLegislation: eli:LegalResource</p>
 <pre class="js">
 dcatap:applicableLegislation &lt;http://data.europa.eu/eli/reg/2022/868/oj&gt;;
 </pre>
