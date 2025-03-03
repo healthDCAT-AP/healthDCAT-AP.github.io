@@ -9221,28 +9221,28 @@ Minimum categories of electronic data for secondary use<br>
 <li>(a)	electronic health data from EHRs;</li>
 <li>(b)	data on factors impacting on health, including socio-economic, environmental and
 behavioural determinants of health;</li>
-<li>(ba) aggregated data on healthcare needs, resources allocated to healthcare, the
+<li>(c) aggregated data on healthcare needs, resources allocated to healthcare, the
 provision of and access to healthcare, healthcare expenditure and financing;</li>
-<li>(c)	pathogen data, impacting on human health;</li>
-<li>(d)	healthcare-related administrative data, including dispensation, claims and
+<li>(d)	pathogen data, impacting on human health;</li>
+<li>(e)	healthcare-related administrative data, including dispensation, claims and
 reimbursement data;</li>
-<li>(e)	human genetic, epigenomic and genomic data;</li>
-<li>(ea) other human molecular data such as proteomic transcriptomic, metabolomic,
+<li>(f)	human genetic, epigenomic and genomic data;</li>
+<li>(g) other human molecular data such as proteomic transcriptomic, metabolomic,
 lipidomic and other omic data;</li>
-<li>(f)	automatically generated personal electronic health data, through medical devices;</li>
-<li>(fa) data from wellness applications;</li>
-<li>(g)	data on professional status, specialisation and institution of health professionals
+<li>(h)	automatically generated personal electronic health data, through medical devices;</li>
+<li>(i) data from wellness applications;</li>
+<li>(j)	data on professional status, specialisation and institution of health professionals
 involved in the treatment of a natural person;</li>
-<li>(h)	population-based health data registries (public health registries);</li>
-<li>(i)	data from medical registries and mortality registries;</li>
-<li>(j)	data from clinical trials, clinical studies and clinical investigations subject to
+<li>(k)	population-based health data registries (public health registries);</li>
+<li>(l)	data from medical registries and mortality registries;</li>
+<li>(m)	data from clinical trials, clinical studies and clinical investigations subject to
 Regulation (EU) 536/2014, Regulation [SOHO], Regulation (EU) 2017/745 and
 Regulation (EU) 2017/746, respectively;</li>
-<li>(k)	other health data from medical devices;</li>
-<li>(ka) data from registries for medicinal products and medical devices;</li>
-<li>(l)	data from research cohorts, questionnaires and surveys related to health, after the
+<li>(n)	other health data from medical devices;</li>
+<li>(o) data from registries for medicinal products and medical devices;</li>
+<li>(p)	data from research cohorts, questionnaires and surveys related to health, after the
 first publication of results;</li>
-<li>(m)	health data from biobanks and associated databases.</li>
+<li>(q)	health data from biobanks and associated databases.</li>
 </ul> 
 </i>
 </p>
@@ -9252,7 +9252,7 @@ Each Dataset that is identified by a <a href= >Health Data Access Body</a> in sc
 
 <h3>Health data categories</h3>
 When a Dataset is within the scope of the EHDS Regulation proposal, it is mandatory that the property <a href="#Dataset.theme">theme</a> takes the value <code>http://publications.europa.eu/resource/authority/data-theme/HEAL</code> of the <a href="http://publications.europa.eu/resource/authority/data-theme">Dataset Theme Vocabulary</a> of the <a href="http://publications.europa.eu">Publications Office</a>.
-<BR>The EHDS Regulation proposal defines 15 electronic health data categories in its Article 51. HealthDCAT-AP introduces a new property <a href="#Dataset.healthcategory">health category</a> to indicate the category to which a dataset, belongs. A controlled vocabulary (to create) with all possible values MUST be used for the property <a href="#Dataset.healthcategory">health category</a>.
+<BR>The EHDS Regulation proposal defines 17 electronic health data categories in its Article 51. HealthDCAT-AP introduces a new property <a href="#Dataset.healthcategory">health category</a> to indicate the category to which a dataset, belongs. A controlled vocabulary (to create) with all possible values MUST be used for the property <a href="#Dataset.healthcategory">health category</a>.
 
 <h3>Access rights</h3>
 When a dataset falls under the purview of the EHDS Regulation Proposal, it is imperative for <a href="#dataholder">data holders</a> to clearly specify to the <a href="#hdabs">Health Data Access Body</a> the conditions under which the dataset can be accessed. Specifically, the <a href="#Dataset.accessrights">Access Rights</a> property is required to adopt one of the predefined values listed in the <a href="https://publications.europa.eu/resource/authority/access-right"> Access Rights Named Authority List</a> provided by the <a href="http://publications.europa.eu">Publications Office</a>. This designation informs data users whether the dataset is considered open data or is classified as non-public.
