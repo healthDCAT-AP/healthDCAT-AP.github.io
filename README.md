@@ -1,8 +1,10 @@
 # healthDCAT-AP.github.io
-Visit the draft version of healthDCAT-AP: https://healthdcat-ap.github.io/
 
-The healthDCAT-AP is a specialised extension of the European DCAT-AP standard, designed specifically for the healthData@EU infrastructure.
+HealthDCAT-AP specification
+The previous version of the HealthDCAT-AP specification was hosted on a public GitHub repository as part of the EHDS2 Pilot.
 
-It retains the foundational structure and concepts of DCAT-AP, while incorporating additional classes and metadata elements to suit the unique needs of the health domain.
+To ensure long-term sustainability, security, and alignment with EU governance frameworks, the specification has been migrated to the European Commission’s official infrastructure.
 
-The purpose of HealthDCAT-AP is to streamline data exchange within the healthData@EU ecosystem and ensure interoperability with other EU data spaces.
+The GitHub page https://healthdcat-ap.github.io has been decommissioned.
+
+The current and authoritative version of the specification is available at: [HealthDCAT-AP Release 5](https://healthdataeu.pages.code.europa.eu/healthdcat-ap/releases/release-5/)
